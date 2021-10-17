@@ -78,6 +78,10 @@ The api contains a list of recipies, and can be searched in the following ways:
 * filter by category
 * filter by Area
 
+Might Be Switching to a D&D Resource instead
+
+http://www.dnd5eapi.co/
+
 ### Component Tree
 
 The component tree for this app is as such:
