@@ -45,18 +45,6 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
 ### Advanced Configuration
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
@@ -68,3 +56,66 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Project Specific Information Below
+
+### TheMealDB
+
+This project uses an api called TheMealDB which can be found at this [link][https://www.themealdb.com/api.php]
+
+The api contains a list of recipies, and can be searched in the following ways:
+* Name
+* Letter
+* Id
+* A random meal
+* 10 random Meals
+* List categories
+* Latest meals (limited access)
+* List all categories / areas/ ingredients
+* filter by main ingredient
+* filter by multiple ingrediants
+* filter by category
+* filter by Area
+
+### Component Tree
+
+The component tree for this app is as such:
+
+App
+    Nav
+        Home Button
+        Ingredient Button
+        Name Button
+        Id Button
+
+    Home page
+        Greeting
+        Nav Buttons
+
+        Ingredients Page
+            Search bar
+            Search Button
+        Name page
+            Search bar
+            Search button
+        Id page
+            Search bar
+            Search button
+        Results page
+            Result cards
+                Meal
+                Area
+                Image
+        Meal Page
+            Title
+            if(image)
+            if(video)
+            category
+            area
+            instructions
+            Tags(links?)
+            1-20 ingrediants
+            1-20 measuerments
+            
+
