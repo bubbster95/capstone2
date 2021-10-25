@@ -62,25 +62,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### TheMealDB
 
-This project uses an api called TheMealDB which can be found at this [link][https://www.themealdb.com/api.php]
-
-The api contains a list of recipies, and can be searched in the following ways:
-* Name
-* Letter
-* Id
-* A random meal
-* 10 random Meals
-* List categories
-* Latest meals (limited access)
-* List all categories / areas/ ingredients
-* filter by main ingredient
-* filter by multiple ingrediants
-* filter by category
-* filter by Area
-
-Might Be Switching to a D&D Resource instead
-
-http://www.dnd5eapi.co/
+This projeckt uses the The 5th Edition Dungeons and Dragons API
+[link][http://www.dnd5eapi.co/p]
+I will use it to create a basic search engine that allows users to easily get information about spells, monsters, and more.
 
 ### Component Tree
 
@@ -89,37 +73,24 @@ The component tree for this app is as such:
 App
     Nav
         Home Button
-        Ingredient Button
-        Name Button
-        Id Button
+        Search Button
 
     Home page
         Greeting
         Nav Buttons
 
-        Ingredients Page
+        Saerch Page
             Search bar
             Search Button
-        Name page
-            Search bar
-            Search button
-        Id page
-            Search bar
-            Search button
         Results page
             Result cards
-                Meal
-                Area
+                Title
                 Image
-        Meal Page
-            Title
+        Item Page
+            Name
+            Description
+            higher level?
             if(image)
             if(video)
-            category
-            area
-            instructions
-            Tags(links?)
-            1-20 ingrediants
-            1-20 measuerments
             
 

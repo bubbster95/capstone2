@@ -4,7 +4,6 @@ function ResultsPage(results) {
     return (
         <div>
             <p>{results}</p>
-
         </div>
     );
 };

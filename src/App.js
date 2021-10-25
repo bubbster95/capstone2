@@ -1,25 +1,21 @@
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import React, {useState} from 'react';
 
 import NavBar from './Nav';
 import Home from './Home'
-import NamesPage from './NamesPage';
-import IdPage from './IdPage';
-import CategoryPage from './CategoryPage';
-import ResultsPage from './ResultsPage'
+import Search from './Search';
 
 import API from './Api'
 
 function App() {
   let [results, setResults] = useState({})
 
-  async function getResults(param, search) {
-    let freshResults = await API.getResults(param, search)
+  async function getResults(search) {
+    let freshResults = await API.getResults(search)
     setResults(freshResults)
-    Redirect(`/${param}/results`)
   }
 
   return (
@@ -33,20 +29,9 @@ function App() {
             </Route>
             
             <Route exact path='/names'>
-              <NamesPage getResults={getResults} />
-            </Route>
-            
-            <Route exact path='/category'>
-              <CategoryPage  getResults={getResults} />
-            </Route>
-            
-            <Route exact path='/id'>
-              <IdPage  getResults={getResults} />
+              <Search getResults={getResults} results={results} />
             </Route>
 
-            <Route path='/:param/results'>
-              <ResultsPage results={results} />
-            </Route>
           </Switch>
         </main>
       </BrowserRouter>
